@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M4 Competition Coupe | Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Existing Canvas Animation stays fixed in background -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-brand">M4 COMPETITION</div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#aerodynamics">Aerodynamics</a>
+        <a href="#performance">Performance</a>
+        <a href="#design-spectrum">Design</a>
+        <a href="#technical-blueprint">Blueprint</a>
+        <a href="#features">Features</a>
+        <a href="#archive">Archive</a>
+        <a href="#specifications">Specs</a>
+    </div>
+</nav>
+
+<!-- Scrolling Content Overlay -->
+<main class="scroll-container">
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="hero-content zoom-in">
+            <h2 class="hero-subtitle">THE ULTIMATE DRIVING MACHINE</h2>
+            <h1 class="hero-title">BMW M4 COMPETITION</h1>
+            <p class="hero-desc">Uncompromising dynamics, expressive design, and track-ready performance.</p>
+            <a href="#aerodynamics" class="btn btn-primary">EXPLORE THE BEAST</a>
+        </div>
+    </section>
+
+    <!-- Aerodynamics Section -->
+    <section id="aerodynamics" class="section">
+        <div class="section-container">
+            <div class="text-content fade-right">
+                <h3 class="section-label">01 // AERODYNAMICS</h3>
+                <h2 class="section-title">SCULPTED FOR SPEED</h2>
+                <p class="section-desc">Every line, every curve is engineered to cut through the air. The aggressive front fascia and prominent kidney grille ensure optimal cooling, while the carbon-fiber elements reduce weight and lower the center of gravity.</p>
+            </div>
+            <div class="glass-panel fade-left delay-1">
+                <h4>Carbon Fiber Roof</h4>
+                <p>Enhances rigidity and reduces overall mass, lowering the car's center of gravity for maximum agility.</p>
+            </div>
+            <div class="glass-panel fade-left delay-2">
+                <h4>M Specific Diffuser</h4>
+                <p>Optimizes airflow beneath the vehicle, generating extreme downforce at high speeds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance" class="section">
+        <div class="section-container">
+            <div class="text-content fade-right">
+                <h3 class="section-label">02 // PERFORMANCE</h3>
+                <h2 class="section-title">UNLEASH THE POWER</h2>
+                <p class="section-desc">At the heart beats the M TwinPower Turbo inline 6-cylinder petrol engine. A masterpiece of engineering delivering unrelenting thrust.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card zoom-in delay-1">
+                    <div class="stat-value"><span class="counter" data-target="503">0</span> hp</div>
+                    <div class="stat-label">Maximum Output</div>
+                </div>
+                <div class="stat-card zoom-in delay-2">
+                    <div class="stat-value"><span class="counter" data-target="650">0</span> Nm</div>
+                    <div class="stat-label">Peak Torque</div>
+                </div>
+                <div class="stat-card zoom-in delay-3">
+                    <div class="stat-value"><span class="counter" data-target="3.5" data-decimals="1">0.0</span> s</div>
+                    <div class="stat-label">0-100 km/h</div>
+                </div>
+                <div class="stat-card zoom-in delay-4">
+                    <div class="stat-value"><span class="counter" data-target="290">0</span> km/h</div>
+                    <div class="stat-label">Top Speed (M Driver's Pkg)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Design Spectrum -->
+<section id="design-spectrum" class="section">
+    <div class="section-container">
+
+        <div class="text-content fade-up">
+            <h3 class="section-label">03 // DESIGN SPECTRUM</h3>
+            <h2 class="section-title">AESTHETIC AGGRESSION</h2>
+        </div>
+
+        <div class="cards-grid">
+
+            <!-- Card 1 -->
+            <div class="image-card fade-up delay-1">
+                <img src="image2/laser_light.png" alt="BMW Laserlight" class="card-image">
+
+                <div class="card-overlay"></div>
+
+                <div class="card-content">
+                    <h4>Laserlight</h4>
+                    <p>Iconic design with blue X elements.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="image-card fade-up delay-2">
+                <img src="image2/wheels.jpeg" alt="BMW M Forged Wheels" class="card-image">
+
+                <div class="card-overlay"></div>
+
+                <div class="card-content">
+                    <h4>M Forged Wheels</h4>
+                    <p>19&quot;/20&quot; double-spoke style with track tires.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="image-card fade-up delay-3">
+                <img src="image2/carbon_buckets.jpeg" alt="BMW Carbon Bucket Seats" class="card-image">
+
+                <div class="card-overlay"></div>
+
+                <div class="card-content">
+                    <h4>M Carbon Buckets</h4>
+                    <p>Track-inspired support meets luxury.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Technical Blueprint -->
+    <section id="technical-blueprint" class="section blueprint-mode">
+        <div class="blueprint-grid"></div>
+        <div class="section-container">
+            <div class="text-content fade-right">
+                <h3 class="section-label">04 // TECHNICAL BLUEPRINT</h3>
+                <h2 class="section-title">ENGINEERING PRECISION</h2>
+            </div>
+            
+            <div class="tech-panels">
+                <div class="tech-panel fade-left delay-1">
+                    <div class="tech-line"></div>
+                    <h4>M xDrive</h4>
+                    <p>Rear-wheel biased intelligent all-wheel-drive system with Active M Differential.</p>
+                </div>
+                <div class="tech-panel fade-left delay-2">
+                    <div class="tech-line"></div>
+                    <h4>Adaptive M Suspension</h4>
+                    <p>Electronically controlled dampers adapting to road conditions in milliseconds.</p>
+                </div>
+                <div class="tech-panel fade-left delay-3">
+                    <div class="tech-line"></div>
+                    <h4>M Compound Brakes</h4>
+                    <p>Exceptional deceleration dynamics with optional M Carbon ceramic brakes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+        <div class="section-container">
+            <div class="text-content fade-up">
+                <h3 class="section-label">05 // FEATURES</h3>
+                <h2 class="section-title">INTELLIGENT DYNAMICS</h2>
+            </div>
+            
+            <div class="feature-list">
+                <div class="feature-item fade-right delay-1">
+                    <h4>M Setup</h4>
+                    <p>Configure engine, chassis, steering and braking characteristics individually.</p>
+                </div>
+                <div class="feature-item fade-left delay-2">
+                    <h4>M Drive Professional</h4>
+                    <p>Includes M Drift Analyser, M Laptimer and M Traction Control (10 stages).</p>
+                </div>
+                <div class="feature-item fade-right delay-3">
+                    <h4>Live Cockpit Professional</h4>
+                    <p>M-specific displays on the digital instrument cluster and Control Display.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Gallery -->
+    <section id="archive" class="section">
+        <div class="section-container">
+            <div class="text-content fade-right">
+                <h3 class="section-label">06 // ARCHIVE</h3>
+                <h2 class="section-title">VISUAL LEGACY</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Using placeholder names that match the imagefile pattern -->
+                <div class="gallery-item zoom-in"><img src="image2/Visual6.jpeg" alt="M4 Gallery 1" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' viewBox=\'0 0 800 400\'><rect fill=\'%23111\' width=\'800\' height=\'400\'/><text fill=\'%23444\' x=\'50%\' y=\'50%\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'24\'>ARCHIVE IMAGE 01</text></svg>'"></div>
+                <div class="gallery-item zoom-in delay-1"><img src="image2/Visual2.png" alt="M4 Gallery 2" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' viewBox=\'0 0 800 400\'><rect fill=\'%23111\' width=\'800\' height=\'400\'/><text fill=\'%23444\' x=\'50%\' y=\'50%\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'24\'>ARCHIVE IMAGE 02</text></svg>'"></div>
+                <div class="gallery-item zoom-in delay-2"><img src="image2/Visual3.jpeg" alt="M4 Gallery 3" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' viewBox=\'0 0 800 400\'><rect fill=\'%23111\' width=\'800\' height=\'400\'/><text fill=\'%23444\' x=\'50%\' y=\'50%\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'24\'>ARCHIVE IMAGE 03</text></svg>'"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications -->
+    <section id="specifications" class="section">
+        <div class="section-container">
+            <div class="text-content fade-up">
+                <h3 class="section-label">07 // SPECIFICATIONS</h3>
+                <h2 class="section-title">TECHNICAL DATA</h2>
+            </div>
+            
+            <div class="spec-table fade-up">
+                <div class="spec-row">
+                    <div class="spec-key">Engine</div>
+                    <div class="spec-value">3.0L M TwinPower Turbo inline 6-cylinder</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-key">Transmission</div>
+                    <div class="spec-value">8-speed M Steptronic with Drivelogic</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-key">Drivetrain</div>
+                    <div class="spec-value">M xDrive (all-wheel drive) or RWD</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-key">Weight</div>
+                    <div class="spec-value">Approx. 1,730 kg (DIN)</div>
+                </div>
+                <div class="spec-row">
+                    <div class="spec-key">Fuel Consumption</div>
+                    <div class="spec-value">10.0 - 10.2 l/100 km (WLTP)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 BMW AG. All rights reserved. Cinematic Showcase.</p>
+        </div>
+    </footer>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
