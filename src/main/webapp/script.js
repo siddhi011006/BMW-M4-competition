@@ -3,14 +3,20 @@ console.log("SCRIPT VERSION: STARTING FROM FRAME 1");
 const canvas = document.getElementById("bg-canvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+function resizeCanvas() {
+    const dpr = window.devicePixelRatio || 1;
+    // Set actual size in memory (scaled to account for extra pixel density)
+    canvas.width = window.innerWidth * dpr;
+    canvas.height = window.innerHeight * dpr;
+    
+    // Normalize coordinate system to use css pixels
+    canvas.style.width = window.innerWidth + "px";
+    canvas.style.height = window.innerHeight + "px";
+}
 
-window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
+resizeCanvas();
 
+window.addEventListener("resize", resizeCanvas);
 
 let frames = [];
 let current = 0;
@@ -97,6 +103,34 @@ animate();
 
 document.addEventListener("DOMContentLoaded", () => {
     
+    // 0. Hamburger Menu Logic
+    const mobileMenuToggle = document.getElementById('mobile-menu');
+    const navLinksContainer = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navLinksContainer.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navLinksContainer.classList.contains('active')) {
+                document.body.style.overflowY = 'hidden';
+            } else {
+                document.body.style.overflowY = 'auto';
+            }
+        });
+
+        // Close menu when clicking a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                navLinksContainer.classList.remove('active');
+                document.body.style.overflowY = 'auto';
+            });
+        });
+    }
+
     // 1. Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
